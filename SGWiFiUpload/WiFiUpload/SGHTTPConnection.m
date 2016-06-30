@@ -194,7 +194,13 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_VERBOSE; // | HTTP_LOG_FLAG_TRACE
 - (void) processContent:(NSData*) data WithHeader:(MultipartMessageHeader*) header 
 {
 	// here we just write the output from parser to the file.
-    if (!header.fields[@"Content-Disposition"]) return;
+    if (!header.fields[@"Content-Disposition"]) {
+        return;
+    } else {
+        MultipartMessageHeaderField *field = header.fields[@"Content-Disposition"];
+        NSString *fileName = field.params[@"filename"];
+        if (fileName.length == 0) return;
+    }
     self.currentLength += data.length;
     CGFloat progress;
     if (self.contentLength == 0) {
@@ -213,7 +219,13 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_VERBOSE; // | HTTP_LOG_FLAG_TRACE
 - (void) processEndOfPartWithHeader:(MultipartMessageHeader*) header
 {
     // as the file part is over, we close the file.
-    if (!header.fields[@"Content-Disposition"]) return;
+    if (!header.fields[@"Content-Disposition"]) {
+        return;
+    } else {
+        MultipartMessageHeaderField *field = header.fields[@"Content-Disposition"];
+        NSString *fileName = field.params[@"filename"];
+        if (fileName.length == 0) return;
+    }
 	[storeFile closeFile];
 	storeFile = nil;
     dispatch_async(dispatch_get_main_queue(), ^{
