@@ -1,0 +1,22 @@
+//
+//  prefix.pch
+//  SGWiFiUploadDemo
+//
+//  Created by soulghost on 30/6/2016.
+//  Copyright © 2016 soulghost. All rights reserved.
+//
+
+#ifndef prefix_pch
+#define prefix_pch
+
+
+#ifdef __OBJC__
+
+#ifndef __OPTIMIZE__
+#define NSLog(...) printf("DEBUG LOG:%s\n",[[NSString stringWithFormat:__VA_ARGS__] UTF8String]);
+#endif
+
+#endif
+
+
+#endif /* prefix_pch */

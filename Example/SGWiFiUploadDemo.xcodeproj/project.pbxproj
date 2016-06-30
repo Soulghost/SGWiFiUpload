@@ -1,0 +1,869 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		681F52751D2404C800F23841 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 681F52741D2404C800F23841 /* main.m */; };
+		681F52781D2404C800F23841 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 681F52771D2404C800F23841 /* AppDelegate.m */; };
+		681F527B1D2404C800F23841 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681F527A1D2404C800F23841 /* ViewController.m */; };
+		681F52801D2404C800F23841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 681F527F1D2404C800F23841 /* Assets.xcassets */; };
+		681F52831D2404C800F23841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 681F52811D2404C800F23841 /* LaunchScreen.storyboard */; };
+		681F528E1D2404C800F23841 /* SGWiFiUploadDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 681F528D1D2404C800F23841 /* SGWiFiUploadDemoTests.m */; };
+		681F52991D2404C800F23841 /* SGWiFiUploadDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 681F52981D2404C800F23841 /* SGWiFiUploadDemoUITests.m */; };
+		68475C3A1D24B3B30061B518 /* SGConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475BE71D24B3B30061B518 /* SGConst.m */; };
+		68475C3B1D24B3B30061B518 /* SGWiFiUpload.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 68475BE81D24B3B30061B518 /* SGWiFiUpload.bundle */; };
+		68475C3C1D24B3B30061B518 /* About.txt in Resources */ = {isa = PBXBuildFile; fileRef = 68475BEB1D24B3B30061B518 /* About.txt */; };
+		68475C3D1D24B3B30061B518 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475BED1D24B3B30061B518 /* GCDAsyncSocket.m */; };
+		68475C3E1D24B3B30061B518 /* About.txt in Resources */ = {isa = PBXBuildFile; fileRef = 68475BEF1D24B3B30061B518 /* About.txt */; };
+		68475C3F1D24B3B30061B518 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475BF11D24B3B30061B518 /* DDAbstractDatabaseLogger.m */; };
+		68475C401D24B3B30061B518 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475BF31D24B3B30061B518 /* DDASLLogger.m */; };
+		68475C411D24B3B30061B518 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475BF51D24B3B30061B518 /* DDFileLogger.m */; };
+		68475C421D24B3B30061B518 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475BF71D24B3B30061B518 /* DDLog.m */; };
+		68475C431D24B3B30061B518 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475BF91D24B3B30061B518 /* DDTTYLogger.m */; };
+		68475C441D24B3B30061B518 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475BFC1D24B3B30061B518 /* ContextFilterLogFormatter.m */; };
+		68475C451D24B3B30061B518 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475BFE1D24B3B30061B518 /* DispatchQueueLogFormatter.m */; };
+		68475C461D24B3B30061B518 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 68475BFF1D24B3B30061B518 /* README.txt */; };
+		68475C471D24B3B30061B518 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475C031D24B3B30061B518 /* DDData.m */; };
+		68475C481D24B3B30061B518 /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475C051D24B3B30061B518 /* DDNumber.m */; };
+		68475C491D24B3B30061B518 /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475C071D24B3B30061B518 /* DDRange.m */; };
+		68475C4A1D24B3B30061B518 /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475C091D24B3B30061B518 /* HTTPAuthenticationRequest.m */; };
+		68475C4B1D24B3B30061B518 /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475C0B1D24B3B30061B518 /* HTTPConnection.m */; };
+		68475C4C1D24B3B30061B518 /* HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475C0E1D24B3B30061B518 /* HTTPMessage.m */; };
+		68475C4D1D24B3B30061B518 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475C111D24B3B30061B518 /* HTTPServer.m */; };
+		68475C4E1D24B3B30061B518 /* MultipartFormDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475C141D24B3B30061B518 /* MultipartFormDataParser.m */; };
+		68475C4F1D24B3B30061B518 /* MultipartMessageHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475C161D24B3B30061B518 /* MultipartMessageHeader.m */; };
+		68475C501D24B3B30061B518 /* MultipartMessageHeaderField.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475C181D24B3B30061B518 /* MultipartMessageHeaderField.m */; };
+		68475C511D24B3B30061B518 /* HTTPAsyncFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475C1B1D24B3B30061B518 /* HTTPAsyncFileResponse.m */; };
+		68475C521D24B3B30061B518 /* HTTPDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475C1D1D24B3B30061B518 /* HTTPDataResponse.m */; };
+		68475C531D24B3B30061B518 /* HTTPDynamicFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475C1F1D24B3B30061B518 /* HTTPDynamicFileResponse.m */; };
+		68475C541D24B3B30061B518 /* HTTPErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475C211D24B3B30061B518 /* HTTPErrorResponse.m */; };
+		68475C551D24B3B30061B518 /* HTTPFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475C231D24B3B30061B518 /* HTTPFileResponse.m */; };
+		68475C561D24B3B30061B518 /* HTTPRedirectResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475C251D24B3B30061B518 /* HTTPRedirectResponse.m */; };
+		68475C571D24B3B30061B518 /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475C271D24B3B30061B518 /* WebSocket.m */; };
+		68475C581D24B3B30061B518 /* HYBIPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475C2A1D24B3B30061B518 /* HYBIPHelper.m */; };
+		68475C591D24B3B30061B518 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 68475C2C1D24B3B30061B518 /* index.html */; };
+		68475C5A1D24B3B30061B518 /* upload.html in Resources */ = {isa = PBXBuildFile; fileRef = 68475C2D1D24B3B30061B518 /* upload.html */; };
+		68475C5B1D24B3B30061B518 /* SGHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475C301D24B3B30061B518 /* SGHTTPConnection.m */; };
+		68475C5C1D24B3B30061B518 /* SGWiFiUploadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475C321D24B3B30061B518 /* SGWiFiUploadManager.m */; };
+		68475C5D1D24B3B30061B518 /* SGWiFiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475C361D24B3B30061B518 /* SGWiFiViewController.m */; };
+		68475C5E1D24B3B30061B518 /* SGWiFiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68475C391D24B3B30061B518 /* SGWiFiView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		681F528A1D2404C800F23841 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 681F52681D2404C800F23841 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 681F526F1D2404C800F23841;
+			remoteInfo = SGWiFiUploadDemo;
+		};
+		681F52951D2404C800F23841 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 681F52681D2404C800F23841 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 681F526F1D2404C800F23841;
+			remoteInfo = SGWiFiUploadDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		681F52701D2404C800F23841 /* SGWiFiUploadDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SGWiFiUploadDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		681F52741D2404C800F23841 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		681F52761D2404C800F23841 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		681F52771D2404C800F23841 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		681F52791D2404C800F23841 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		681F527A1D2404C800F23841 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		681F527F1D2404C800F23841 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		681F52821D2404C800F23841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		681F52841D2404C800F23841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		681F52891D2404C800F23841 /* SGWiFiUploadDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SGWiFiUploadDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		681F528D1D2404C800F23841 /* SGWiFiUploadDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGWiFiUploadDemoTests.m; sourceTree = "<group>"; };
+		681F528F1D2404C800F23841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		681F52941D2404C800F23841 /* SGWiFiUploadDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SGWiFiUploadDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		681F52981D2404C800F23841 /* SGWiFiUploadDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGWiFiUploadDemoUITests.m; sourceTree = "<group>"; };
+		681F529A1D2404C800F23841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68475BD71D24A99C0061B518 /* prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = "<group>"; };
+		68475BE61D24B3B30061B518 /* SGConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGConst.h; sourceTree = "<group>"; };
+		68475BE71D24B3B30061B518 /* SGConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGConst.m; sourceTree = "<group>"; };
+		68475BE81D24B3B30061B518 /* SGWiFiUpload.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SGWiFiUpload.bundle; sourceTree = "<group>"; };
+		68475BEB1D24B3B30061B518 /* About.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = About.txt; sourceTree = "<group>"; };
+		68475BEC1D24B3B30061B518 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		68475BED1D24B3B30061B518 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		68475BEF1D24B3B30061B518 /* About.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = About.txt; sourceTree = "<group>"; };
+		68475BF01D24B3B30061B518 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		68475BF11D24B3B30061B518 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		68475BF21D24B3B30061B518 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		68475BF31D24B3B30061B518 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		68475BF41D24B3B30061B518 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		68475BF51D24B3B30061B518 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		68475BF61D24B3B30061B518 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		68475BF71D24B3B30061B518 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		68475BF81D24B3B30061B518 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		68475BF91D24B3B30061B518 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		68475BFB1D24B3B30061B518 /* ContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		68475BFC1D24B3B30061B518 /* ContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		68475BFD1D24B3B30061B518 /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		68475BFE1D24B3B30061B518 /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		68475BFF1D24B3B30061B518 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		68475C021D24B3B30061B518 /* DDData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDData.h; sourceTree = "<group>"; };
+		68475C031D24B3B30061B518 /* DDData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDData.m; sourceTree = "<group>"; };
+		68475C041D24B3B30061B518 /* DDNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNumber.h; sourceTree = "<group>"; };
+		68475C051D24B3B30061B518 /* DDNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNumber.m; sourceTree = "<group>"; };
+		68475C061D24B3B30061B518 /* DDRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRange.h; sourceTree = "<group>"; };
+		68475C071D24B3B30061B518 /* DDRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRange.m; sourceTree = "<group>"; };
+		68475C081D24B3B30061B518 /* HTTPAuthenticationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPAuthenticationRequest.h; sourceTree = "<group>"; };
+		68475C091D24B3B30061B518 /* HTTPAuthenticationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPAuthenticationRequest.m; sourceTree = "<group>"; };
+		68475C0A1D24B3B30061B518 /* HTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPConnection.h; sourceTree = "<group>"; };
+		68475C0B1D24B3B30061B518 /* HTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPConnection.m; sourceTree = "<group>"; };
+		68475C0C1D24B3B30061B518 /* HTTPLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPLogging.h; sourceTree = "<group>"; };
+		68475C0D1D24B3B30061B518 /* HTTPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPMessage.h; sourceTree = "<group>"; };
+		68475C0E1D24B3B30061B518 /* HTTPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPMessage.m; sourceTree = "<group>"; };
+		68475C0F1D24B3B30061B518 /* HTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPResponse.h; sourceTree = "<group>"; };
+		68475C101D24B3B30061B518 /* HTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPServer.h; sourceTree = "<group>"; };
+		68475C111D24B3B30061B518 /* HTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPServer.m; sourceTree = "<group>"; };
+		68475C131D24B3B30061B518 /* MultipartFormDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipartFormDataParser.h; sourceTree = "<group>"; };
+		68475C141D24B3B30061B518 /* MultipartFormDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipartFormDataParser.m; sourceTree = "<group>"; };
+		68475C151D24B3B30061B518 /* MultipartMessageHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipartMessageHeader.h; sourceTree = "<group>"; };
+		68475C161D24B3B30061B518 /* MultipartMessageHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipartMessageHeader.m; sourceTree = "<group>"; };
+		68475C171D24B3B30061B518 /* MultipartMessageHeaderField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipartMessageHeaderField.h; sourceTree = "<group>"; };
+		68475C181D24B3B30061B518 /* MultipartMessageHeaderField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipartMessageHeaderField.m; sourceTree = "<group>"; };
+		68475C1A1D24B3B30061B518 /* HTTPAsyncFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPAsyncFileResponse.h; sourceTree = "<group>"; };
+		68475C1B1D24B3B30061B518 /* HTTPAsyncFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPAsyncFileResponse.m; sourceTree = "<group>"; };
+		68475C1C1D24B3B30061B518 /* HTTPDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDataResponse.h; sourceTree = "<group>"; };
+		68475C1D1D24B3B30061B518 /* HTTPDataResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDataResponse.m; sourceTree = "<group>"; };
+		68475C1E1D24B3B30061B518 /* HTTPDynamicFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDynamicFileResponse.h; sourceTree = "<group>"; };
+		68475C1F1D24B3B30061B518 /* HTTPDynamicFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDynamicFileResponse.m; sourceTree = "<group>"; };
+		68475C201D24B3B30061B518 /* HTTPErrorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPErrorResponse.h; sourceTree = "<group>"; };
+		68475C211D24B3B30061B518 /* HTTPErrorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPErrorResponse.m; sourceTree = "<group>"; };
+		68475C221D24B3B30061B518 /* HTTPFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPFileResponse.h; sourceTree = "<group>"; };
+		68475C231D24B3B30061B518 /* HTTPFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPFileResponse.m; sourceTree = "<group>"; };
+		68475C241D24B3B30061B518 /* HTTPRedirectResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRedirectResponse.h; sourceTree = "<group>"; };
+		68475C251D24B3B30061B518 /* HTTPRedirectResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRedirectResponse.m; sourceTree = "<group>"; };
+		68475C261D24B3B30061B518 /* WebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocket.h; sourceTree = "<group>"; };
+		68475C271D24B3B30061B518 /* WebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocket.m; sourceTree = "<group>"; };
+		68475C291D24B3B30061B518 /* HYBIPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBIPHelper.h; sourceTree = "<group>"; };
+		68475C2A1D24B3B30061B518 /* HYBIPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBIPHelper.m; sourceTree = "<group>"; };
+		68475C2C1D24B3B30061B518 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		68475C2D1D24B3B30061B518 /* upload.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = upload.html; sourceTree = "<group>"; };
+		68475C2F1D24B3B30061B518 /* SGHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHTTPConnection.h; sourceTree = "<group>"; };
+		68475C301D24B3B30061B518 /* SGHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGHTTPConnection.m; sourceTree = "<group>"; };
+		68475C311D24B3B30061B518 /* SGWiFiUploadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGWiFiUploadManager.h; sourceTree = "<group>"; };
+		68475C321D24B3B30061B518 /* SGWiFiUploadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGWiFiUploadManager.m; sourceTree = "<group>"; };
+		68475C351D24B3B30061B518 /* SGWiFiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGWiFiViewController.h; sourceTree = "<group>"; };
+		68475C361D24B3B30061B518 /* SGWiFiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGWiFiViewController.m; sourceTree = "<group>"; };
+		68475C381D24B3B30061B518 /* SGWiFiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGWiFiView.h; sourceTree = "<group>"; };
+		68475C391D24B3B30061B518 /* SGWiFiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGWiFiView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		681F526D1D2404C800F23841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		681F52861D2404C800F23841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		681F52911D2404C800F23841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		681F52671D2404C800F23841 = {
+			isa = PBXGroup;
+			children = (
+				681F52721D2404C800F23841 /* SGWiFiUploadDemo */,
+				681F528C1D2404C800F23841 /* SGWiFiUploadDemoTests */,
+				681F52971D2404C800F23841 /* SGWiFiUploadDemoUITests */,
+				681F52711D2404C800F23841 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		681F52711D2404C800F23841 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				681F52701D2404C800F23841 /* SGWiFiUploadDemo.app */,
+				681F52891D2404C800F23841 /* SGWiFiUploadDemoTests.xctest */,
+				681F52941D2404C800F23841 /* SGWiFiUploadDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		681F52721D2404C800F23841 /* SGWiFiUploadDemo */ = {
+			isa = PBXGroup;
+			children = (
+				68475BE41D24B3B30061B518 /* SGWiFiUpload */,
+				681F52761D2404C800F23841 /* AppDelegate.h */,
+				681F52771D2404C800F23841 /* AppDelegate.m */,
+				681F52791D2404C800F23841 /* ViewController.h */,
+				681F527A1D2404C800F23841 /* ViewController.m */,
+				681F527F1D2404C800F23841 /* Assets.xcassets */,
+				681F52811D2404C800F23841 /* LaunchScreen.storyboard */,
+				681F52841D2404C800F23841 /* Info.plist */,
+				681F52731D2404C800F23841 /* Supporting Files */,
+			);
+			path = SGWiFiUploadDemo;
+			sourceTree = "<group>";
+		};
+		681F52731D2404C800F23841 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				681F52741D2404C800F23841 /* main.m */,
+				68475BD71D24A99C0061B518 /* prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		681F528C1D2404C800F23841 /* SGWiFiUploadDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				681F528D1D2404C800F23841 /* SGWiFiUploadDemoTests.m */,
+				681F528F1D2404C800F23841 /* Info.plist */,
+			);
+			path = SGWiFiUploadDemoTests;
+			sourceTree = "<group>";
+		};
+		681F52971D2404C800F23841 /* SGWiFiUploadDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				681F52981D2404C800F23841 /* SGWiFiUploadDemoUITests.m */,
+				681F529A1D2404C800F23841 /* Info.plist */,
+			);
+			path = SGWiFiUploadDemoUITests;
+			sourceTree = "<group>";
+		};
+		68475BE41D24B3B30061B518 /* SGWiFiUpload */ = {
+			isa = PBXGroup;
+			children = (
+				68475BE51D24B3B30061B518 /* Const */,
+				68475BE81D24B3B30061B518 /* SGWiFiUpload.bundle */,
+				68475BE91D24B3B30061B518 /* Vendor */,
+				68475C2B1D24B3B30061B518 /* Web */,
+				68475C2E1D24B3B30061B518 /* WiFiUpload */,
+			);
+			path = SGWiFiUpload;
+			sourceTree = "<group>";
+		};
+		68475BE51D24B3B30061B518 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				68475BE61D24B3B30061B518 /* SGConst.h */,
+				68475BE71D24B3B30061B518 /* SGConst.m */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		68475BE91D24B3B30061B518 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				68475BEA1D24B3B30061B518 /* CocoaAsyncSocket */,
+				68475BEE1D24B3B30061B518 /* CocoaLumberjack */,
+				68475C001D24B3B30061B518 /* Core */,
+				68475C281D24B3B30061B518 /* HYBIPHelper */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		68475BEA1D24B3B30061B518 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				68475BEB1D24B3B30061B518 /* About.txt */,
+				68475BEC1D24B3B30061B518 /* GCDAsyncSocket.h */,
+				68475BED1D24B3B30061B518 /* GCDAsyncSocket.m */,
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		68475BEE1D24B3B30061B518 /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				68475BEF1D24B3B30061B518 /* About.txt */,
+				68475BF01D24B3B30061B518 /* DDAbstractDatabaseLogger.h */,
+				68475BF11D24B3B30061B518 /* DDAbstractDatabaseLogger.m */,
+				68475BF21D24B3B30061B518 /* DDASLLogger.h */,
+				68475BF31D24B3B30061B518 /* DDASLLogger.m */,
+				68475BF41D24B3B30061B518 /* DDFileLogger.h */,
+				68475BF51D24B3B30061B518 /* DDFileLogger.m */,
+				68475BF61D24B3B30061B518 /* DDLog.h */,
+				68475BF71D24B3B30061B518 /* DDLog.m */,
+				68475BF81D24B3B30061B518 /* DDTTYLogger.h */,
+				68475BF91D24B3B30061B518 /* DDTTYLogger.m */,
+				68475BFA1D24B3B30061B518 /* Extensions */,
+			);
+			path = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+		68475BFA1D24B3B30061B518 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				68475BFB1D24B3B30061B518 /* ContextFilterLogFormatter.h */,
+				68475BFC1D24B3B30061B518 /* ContextFilterLogFormatter.m */,
+				68475BFD1D24B3B30061B518 /* DispatchQueueLogFormatter.h */,
+				68475BFE1D24B3B30061B518 /* DispatchQueueLogFormatter.m */,
+				68475BFF1D24B3B30061B518 /* README.txt */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		68475C001D24B3B30061B518 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				68475C011D24B3B30061B518 /* Categories */,
+				68475C081D24B3B30061B518 /* HTTPAuthenticationRequest.h */,
+				68475C091D24B3B30061B518 /* HTTPAuthenticationRequest.m */,
+				68475C0A1D24B3B30061B518 /* HTTPConnection.h */,
+				68475C0B1D24B3B30061B518 /* HTTPConnection.m */,
+				68475C0C1D24B3B30061B518 /* HTTPLogging.h */,
+				68475C0D1D24B3B30061B518 /* HTTPMessage.h */,
+				68475C0E1D24B3B30061B518 /* HTTPMessage.m */,
+				68475C0F1D24B3B30061B518 /* HTTPResponse.h */,
+				68475C101D24B3B30061B518 /* HTTPServer.h */,
+				68475C111D24B3B30061B518 /* HTTPServer.m */,
+				68475C121D24B3B30061B518 /* Mime */,
+				68475C191D24B3B30061B518 /* Responses */,
+				68475C261D24B3B30061B518 /* WebSocket.h */,
+				68475C271D24B3B30061B518 /* WebSocket.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		68475C011D24B3B30061B518 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				68475C021D24B3B30061B518 /* DDData.h */,
+				68475C031D24B3B30061B518 /* DDData.m */,
+				68475C041D24B3B30061B518 /* DDNumber.h */,
+				68475C051D24B3B30061B518 /* DDNumber.m */,
+				68475C061D24B3B30061B518 /* DDRange.h */,
+				68475C071D24B3B30061B518 /* DDRange.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		68475C121D24B3B30061B518 /* Mime */ = {
+			isa = PBXGroup;
+			children = (
+				68475C131D24B3B30061B518 /* MultipartFormDataParser.h */,
+				68475C141D24B3B30061B518 /* MultipartFormDataParser.m */,
+				68475C151D24B3B30061B518 /* MultipartMessageHeader.h */,
+				68475C161D24B3B30061B518 /* MultipartMessageHeader.m */,
+				68475C171D24B3B30061B518 /* MultipartMessageHeaderField.h */,
+				68475C181D24B3B30061B518 /* MultipartMessageHeaderField.m */,
+			);
+			path = Mime;
+			sourceTree = "<group>";
+		};
+		68475C191D24B3B30061B518 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				68475C1A1D24B3B30061B518 /* HTTPAsyncFileResponse.h */,
+				68475C1B1D24B3B30061B518 /* HTTPAsyncFileResponse.m */,
+				68475C1C1D24B3B30061B518 /* HTTPDataResponse.h */,
+				68475C1D1D24B3B30061B518 /* HTTPDataResponse.m */,
+				68475C1E1D24B3B30061B518 /* HTTPDynamicFileResponse.h */,
+				68475C1F1D24B3B30061B518 /* HTTPDynamicFileResponse.m */,
+				68475C201D24B3B30061B518 /* HTTPErrorResponse.h */,
+				68475C211D24B3B30061B518 /* HTTPErrorResponse.m */,
+				68475C221D24B3B30061B518 /* HTTPFileResponse.h */,
+				68475C231D24B3B30061B518 /* HTTPFileResponse.m */,
+				68475C241D24B3B30061B518 /* HTTPRedirectResponse.h */,
+				68475C251D24B3B30061B518 /* HTTPRedirectResponse.m */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		68475C281D24B3B30061B518 /* HYBIPHelper */ = {
+			isa = PBXGroup;
+			children = (
+				68475C291D24B3B30061B518 /* HYBIPHelper.h */,
+				68475C2A1D24B3B30061B518 /* HYBIPHelper.m */,
+			);
+			path = HYBIPHelper;
+			sourceTree = "<group>";
+		};
+		68475C2B1D24B3B30061B518 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				68475C2C1D24B3B30061B518 /* index.html */,
+				68475C2D1D24B3B30061B518 /* upload.html */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		68475C2E1D24B3B30061B518 /* WiFiUpload */ = {
+			isa = PBXGroup;
+			children = (
+				68475C2F1D24B3B30061B518 /* SGHTTPConnection.h */,
+				68475C301D24B3B30061B518 /* SGHTTPConnection.m */,
+				68475C311D24B3B30061B518 /* SGWiFiUploadManager.h */,
+				68475C321D24B3B30061B518 /* SGWiFiUploadManager.m */,
+				68475C331D24B3B30061B518 /* WiFiPage */,
+			);
+			path = WiFiUpload;
+			sourceTree = "<group>";
+		};
+		68475C331D24B3B30061B518 /* WiFiPage */ = {
+			isa = PBXGroup;
+			children = (
+				68475C341D24B3B30061B518 /* Controller */,
+				68475C371D24B3B30061B518 /* View */,
+			);
+			path = WiFiPage;
+			sourceTree = "<group>";
+		};
+		68475C341D24B3B30061B518 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				68475C351D24B3B30061B518 /* SGWiFiViewController.h */,
+				68475C361D24B3B30061B518 /* SGWiFiViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		68475C371D24B3B30061B518 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				68475C381D24B3B30061B518 /* SGWiFiView.h */,
+				68475C391D24B3B30061B518 /* SGWiFiView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		681F526F1D2404C800F23841 /* SGWiFiUploadDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 681F529D1D2404C800F23841 /* Build configuration list for PBXNativeTarget "SGWiFiUploadDemo" */;
+			buildPhases = (
+				681F526C1D2404C800F23841 /* Sources */,
+				681F526D1D2404C800F23841 /* Frameworks */,
+				681F526E1D2404C800F23841 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SGWiFiUploadDemo;
+			productName = SGWiFiUploadDemo;
+			productReference = 681F52701D2404C800F23841 /* SGWiFiUploadDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		681F52881D2404C800F23841 /* SGWiFiUploadDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 681F52A01D2404C800F23841 /* Build configuration list for PBXNativeTarget "SGWiFiUploadDemoTests" */;
+			buildPhases = (
+				681F52851D2404C800F23841 /* Sources */,
+				681F52861D2404C800F23841 /* Frameworks */,
+				681F52871D2404C800F23841 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				681F528B1D2404C800F23841 /* PBXTargetDependency */,
+			);
+			name = SGWiFiUploadDemoTests;
+			productName = SGWiFiUploadDemoTests;
+			productReference = 681F52891D2404C800F23841 /* SGWiFiUploadDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		681F52931D2404C800F23841 /* SGWiFiUploadDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 681F52A31D2404C800F23841 /* Build configuration list for PBXNativeTarget "SGWiFiUploadDemoUITests" */;
+			buildPhases = (
+				681F52901D2404C800F23841 /* Sources */,
+				681F52911D2404C800F23841 /* Frameworks */,
+				681F52921D2404C800F23841 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				681F52961D2404C800F23841 /* PBXTargetDependency */,
+			);
+			name = SGWiFiUploadDemoUITests;
+			productName = SGWiFiUploadDemoUITests;
+			productReference = 681F52941D2404C800F23841 /* SGWiFiUploadDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		681F52681D2404C800F23841 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = soulghost;
+				TargetAttributes = {
+					681F526F1D2404C800F23841 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6CMYQQFFT8;
+						DevelopmentTeamName = "Yutong Xiu";
+						ProvisioningStyle = Automatic;
+					};
+					681F52881D2404C800F23841 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6CMYQQFFT8;
+						DevelopmentTeamName = "Yutong Xiu";
+						ProvisioningStyle = Automatic;
+						TestTargetID = 681F526F1D2404C800F23841;
+					};
+					681F52931D2404C800F23841 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6CMYQQFFT8;
+						DevelopmentTeamName = "Yutong Xiu";
+						ProvisioningStyle = Automatic;
+						TestTargetID = 681F526F1D2404C800F23841;
+					};
+				};
+			};
+			buildConfigurationList = 681F526B1D2404C800F23841 /* Build configuration list for PBXProject "SGWiFiUploadDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 681F52671D2404C800F23841;
+			productRefGroup = 681F52711D2404C800F23841 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				681F526F1D2404C800F23841 /* SGWiFiUploadDemo */,
+				681F52881D2404C800F23841 /* SGWiFiUploadDemoTests */,
+				681F52931D2404C800F23841 /* SGWiFiUploadDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		681F526E1D2404C800F23841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68475C591D24B3B30061B518 /* index.html in Resources */,
+				68475C3B1D24B3B30061B518 /* SGWiFiUpload.bundle in Resources */,
+				681F52831D2404C800F23841 /* LaunchScreen.storyboard in Resources */,
+				68475C5A1D24B3B30061B518 /* upload.html in Resources */,
+				68475C3C1D24B3B30061B518 /* About.txt in Resources */,
+				681F52801D2404C800F23841 /* Assets.xcassets in Resources */,
+				68475C461D24B3B30061B518 /* README.txt in Resources */,
+				68475C3E1D24B3B30061B518 /* About.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		681F52871D2404C800F23841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		681F52921D2404C800F23841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		681F526C1D2404C800F23841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68475C491D24B3B30061B518 /* DDRange.m in Sources */,
+				68475C511D24B3B30061B518 /* HTTPAsyncFileResponse.m in Sources */,
+				68475C581D24B3B30061B518 /* HYBIPHelper.m in Sources */,
+				68475C531D24B3B30061B518 /* HTTPDynamicFileResponse.m in Sources */,
+				68475C4C1D24B3B30061B518 /* HTTPMessage.m in Sources */,
+				68475C4B1D24B3B30061B518 /* HTTPConnection.m in Sources */,
+				681F527B1D2404C800F23841 /* ViewController.m in Sources */,
+				68475C451D24B3B30061B518 /* DispatchQueueLogFormatter.m in Sources */,
+				68475C571D24B3B30061B518 /* WebSocket.m in Sources */,
+				68475C5E1D24B3B30061B518 /* SGWiFiView.m in Sources */,
+				68475C431D24B3B30061B518 /* DDTTYLogger.m in Sources */,
+				68475C4F1D24B3B30061B518 /* MultipartMessageHeader.m in Sources */,
+				68475C411D24B3B30061B518 /* DDFileLogger.m in Sources */,
+				68475C3D1D24B3B30061B518 /* GCDAsyncSocket.m in Sources */,
+				68475C4D1D24B3B30061B518 /* HTTPServer.m in Sources */,
+				68475C4E1D24B3B30061B518 /* MultipartFormDataParser.m in Sources */,
+				68475C551D24B3B30061B518 /* HTTPFileResponse.m in Sources */,
+				68475C471D24B3B30061B518 /* DDData.m in Sources */,
+				68475C3F1D24B3B30061B518 /* DDAbstractDatabaseLogger.m in Sources */,
+				68475C521D24B3B30061B518 /* HTTPDataResponse.m in Sources */,
+				68475C3A1D24B3B30061B518 /* SGConst.m in Sources */,
+				68475C541D24B3B30061B518 /* HTTPErrorResponse.m in Sources */,
+				68475C441D24B3B30061B518 /* ContextFilterLogFormatter.m in Sources */,
+				681F52781D2404C800F23841 /* AppDelegate.m in Sources */,
+				68475C5D1D24B3B30061B518 /* SGWiFiViewController.m in Sources */,
+				68475C501D24B3B30061B518 /* MultipartMessageHeaderField.m in Sources */,
+				68475C481D24B3B30061B518 /* DDNumber.m in Sources */,
+				68475C5C1D24B3B30061B518 /* SGWiFiUploadManager.m in Sources */,
+				68475C421D24B3B30061B518 /* DDLog.m in Sources */,
+				68475C401D24B3B30061B518 /* DDASLLogger.m in Sources */,
+				681F52751D2404C800F23841 /* main.m in Sources */,
+				68475C561D24B3B30061B518 /* HTTPRedirectResponse.m in Sources */,
+				68475C5B1D24B3B30061B518 /* SGHTTPConnection.m in Sources */,
+				68475C4A1D24B3B30061B518 /* HTTPAuthenticationRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		681F52851D2404C800F23841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				681F528E1D2404C800F23841 /* SGWiFiUploadDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		681F52901D2404C800F23841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				681F52991D2404C800F23841 /* SGWiFiUploadDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		681F528B1D2404C800F23841 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 681F526F1D2404C800F23841 /* SGWiFiUploadDemo */;
+			targetProxy = 681F528A1D2404C800F23841 /* PBXContainerItemProxy */;
+		};
+		681F52961D2404C800F23841 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 681F526F1D2404C800F23841 /* SGWiFiUploadDemo */;
+			targetProxy = 681F52951D2404C800F23841 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		681F52811D2404C800F23841 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				681F52821D2404C800F23841 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		681F529B1D2404C800F23841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		681F529C1D2404C800F23841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		681F529E1D2404C800F23841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = SGWiFiUploadDemo/prefix.pch;
+				INFOPLIST_FILE = SGWiFiUploadDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soulghost.SGWiFiUploadDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		681F529F1D2404C800F23841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = SGWiFiUploadDemo/prefix.pch;
+				INFOPLIST_FILE = SGWiFiUploadDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soulghost.SGWiFiUploadDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		681F52A11D2404C800F23841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SGWiFiUploadDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soulghost.SGWiFiUploadDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SGWiFiUploadDemo.app/SGWiFiUploadDemo";
+			};
+			name = Debug;
+		};
+		681F52A21D2404C800F23841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SGWiFiUploadDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soulghost.SGWiFiUploadDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SGWiFiUploadDemo.app/SGWiFiUploadDemo";
+			};
+			name = Release;
+		};
+		681F52A41D2404C800F23841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SGWiFiUploadDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soulghost.SGWiFiUploadDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SGWiFiUploadDemo;
+			};
+			name = Debug;
+		};
+		681F52A51D2404C800F23841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SGWiFiUploadDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soulghost.SGWiFiUploadDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SGWiFiUploadDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		681F526B1D2404C800F23841 /* Build configuration list for PBXProject "SGWiFiUploadDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				681F529B1D2404C800F23841 /* Debug */,
+				681F529C1D2404C800F23841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		681F529D1D2404C800F23841 /* Build configuration list for PBXNativeTarget "SGWiFiUploadDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				681F529E1D2404C800F23841 /* Debug */,
+				681F529F1D2404C800F23841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		681F52A01D2404C800F23841 /* Build configuration list for PBXNativeTarget "SGWiFiUploadDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				681F52A11D2404C800F23841 /* Debug */,
+				681F52A21D2404C800F23841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		681F52A31D2404C800F23841 /* Build configuration list for PBXNativeTarget "SGWiFiUploadDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				681F52A41D2404C800F23841 /* Debug */,
+				681F52A51D2404C800F23841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 681F52681D2404C800F23841 /* Project object */;
+}
