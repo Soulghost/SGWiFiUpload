@@ -47,8 +47,11 @@ Drag the `SGWiFiUpload` folder to your project.
 }
 ```
 
-### Display an WiFi Page
+### Display a WiFi Page on Device
 You can use the default WiFi Page to tell users how and where to use it.
+<p>
+<img src="https://raw.githubusercontent.com/Soulghost/SGWiFiUpload/master/Images/WiFiPhonePage.png" width = "300" height = "533" alt="WiFi Page" align=center />
+</p>
 ```objective-c
 [[SGWiFiUploadManager sharedManager] showWiFiPageFrontViewController:self];
 ```
