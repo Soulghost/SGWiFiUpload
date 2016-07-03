@@ -11,9 +11,9 @@
 		681F52781D2404C800F23841 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 681F52771D2404C800F23841 /* AppDelegate.m */; };
 		681F527B1D2404C800F23841 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681F527A1D2404C800F23841 /* ViewController.m */; };
 		681F52801D2404C800F23841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 681F527F1D2404C800F23841 /* Assets.xcassets */; };
-		681F52831D2404C800F23841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 681F52811D2404C800F23841 /* LaunchScreen.storyboard */; };
 		681F528E1D2404C800F23841 /* SGWiFiUploadDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 681F528D1D2404C800F23841 /* SGWiFiUploadDemoTests.m */; };
 		681F52991D2404C800F23841 /* SGWiFiUploadDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 681F52981D2404C800F23841 /* SGWiFiUploadDemoUITests.m */; };
+		686C73EB1D295F50004248EB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 686C73EA1D295F50004248EB /* Launch Screen.storyboard */; };
 		68B5E05B1D24C149005C2BD2 /* SGConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5E0081D24C149005C2BD2 /* SGConst.m */; };
 		68B5E05C1D24C149005C2BD2 /* SGWiFiUpload.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 68B5E0091D24C149005C2BD2 /* SGWiFiUpload.bundle */; };
 		68B5E05D1D24C149005C2BD2 /* About.txt in Resources */ = {isa = PBXBuildFile; fileRef = 68B5E00C1D24C149005C2BD2 /* About.txt */; };
@@ -78,7 +78,6 @@
 		681F52791D2404C800F23841 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		681F527A1D2404C800F23841 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		681F527F1D2404C800F23841 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		681F52821D2404C800F23841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		681F52841D2404C800F23841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		681F52891D2404C800F23841 /* SGWiFiUploadDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SGWiFiUploadDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		681F528D1D2404C800F23841 /* SGWiFiUploadDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGWiFiUploadDemoTests.m; sourceTree = "<group>"; };
@@ -87,6 +86,7 @@
 		681F52981D2404C800F23841 /* SGWiFiUploadDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGWiFiUploadDemoUITests.m; sourceTree = "<group>"; };
 		681F529A1D2404C800F23841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68475BD71D24A99C0061B518 /* prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = "<group>"; };
+		686C73EA1D295F50004248EB /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		68B5E0071D24C149005C2BD2 /* SGConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGConst.h; sourceTree = "<group>"; };
 		68B5E0081D24C149005C2BD2 /* SGConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGConst.m; sourceTree = "<group>"; };
 		68B5E0091D24C149005C2BD2 /* SGWiFiUpload.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SGWiFiUpload.bundle; sourceTree = "<group>"; };
@@ -213,7 +213,6 @@
 				681F52791D2404C800F23841 /* ViewController.h */,
 				681F527A1D2404C800F23841 /* ViewController.m */,
 				681F527F1D2404C800F23841 /* Assets.xcassets */,
-				681F52811D2404C800F23841 /* LaunchScreen.storyboard */,
 				681F52841D2404C800F23841 /* Info.plist */,
 				681F52731D2404C800F23841 /* Supporting Files */,
 			);
@@ -225,6 +224,7 @@
 			children = (
 				681F52741D2404C800F23841 /* main.m */,
 				68475BD71D24A99C0061B518 /* prefix.pch */,
+				686C73EA1D295F50004248EB /* Launch Screen.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -559,7 +559,7 @@
 			files = (
 				68B5E07A1D24C149005C2BD2 /* index.html in Resources */,
 				68B5E05C1D24C149005C2BD2 /* SGWiFiUpload.bundle in Resources */,
-				681F52831D2404C800F23841 /* LaunchScreen.storyboard in Resources */,
+				686C73EB1D295F50004248EB /* Launch Screen.storyboard in Resources */,
 				68B5E07B1D24C149005C2BD2 /* upload.html in Resources */,
 				68B5E05D1D24C149005C2BD2 /* About.txt in Resources */,
 				681F52801D2404C800F23841 /* Assets.xcassets in Resources */,
@@ -656,17 +656,6 @@
 			targetProxy = 681F52951D2404C800F23841 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		681F52811D2404C800F23841 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				681F52821D2404C800F23841 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		681F529B1D2404C800F23841 /* Debug */ = {
