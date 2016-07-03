@@ -163,10 +163,12 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_VERBOSE; // | HTTP_LOG_FLAG_TRACE
         // it's either not a file part, or
 		// an empty form sent. we won't handle it.
 		return;
-	}    
+	}
+    // 这里用于发出文件开始上传的通知
     dispatch_async(dispatch_get_main_queue(), ^{
         [[NSNotificationCenter defaultCenter] postNotificationName:SGFileUploadDidStartNotification object:@{@"fileName" : filename ?: @"File"}];
     });
+    // 这里用于设置文件的保存路径，先预存一个空文件，然后进行追加写内容
     NSString *uploadDirPath = [SGWiFiUploadManager sharedManager].savePath;
 	BOOL isDir = YES;
 	if (![[NSFileManager defaultManager]fileExistsAtPath:uploadDirPath isDirectory:&isDir ]) {
@@ -194,6 +196,7 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_VERBOSE; // | HTTP_LOG_FLAG_TRACE
 - (void) processContent:(NSData*) data WithHeader:(MultipartMessageHeader*) header 
 {
 	// here we just write the output from parser to the file.
+    // 由于除去文件内容外，还有HTML内容和空文件通过此方法处理，因此需要过滤掉HTML和空文件内容
     if (!header.fields[@"Content-Disposition"]) {
         return;
     } else {
@@ -219,6 +222,7 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_VERBOSE; // | HTTP_LOG_FLAG_TRACE
 - (void) processEndOfPartWithHeader:(MultipartMessageHeader*) header
 {
     // as the file part is over, we close the file.
+    // 由于除去文件内容外，还有HTML内容和空文件通过此方法处理，因此需要过滤掉HTML和空文件内容
     if (!header.fields[@"Content-Disposition"]) {
         return;
     } else {
