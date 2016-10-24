@@ -1,4 +1,4 @@
-# SGWifiUpload
+# SGWiFiUpload
 
 SGWiFiUpload is a tool based on [CocoaHTTPServer](https://github.com/robbiehanson/CocoaHTTPServer) for iOS to upload files through WiFi. By using this framework, you can upload files easily. It can be used for many locations, such as photos and videos upload.Files will save to Caches by default.
 
