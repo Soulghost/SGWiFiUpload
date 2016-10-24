@@ -50,6 +50,9 @@
 
 - (void)dismiss {
     [self dismissViewControllerAnimated:YES completion:nil];
+    if (self.dismissBlock) {
+        self.dismissBlock();
+    }
 }
 
 @end

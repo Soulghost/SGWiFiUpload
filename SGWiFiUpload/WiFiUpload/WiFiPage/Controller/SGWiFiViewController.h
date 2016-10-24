@@ -10,6 +10,12 @@
 
 @class HTTPServer;
 
+typedef void (^SGWiFiViewControllerDismissBlock)(void);
+
+
 @interface SGWiFiViewController : UIViewController
+
+@property (nonatomic, copy) SGWiFiViewControllerDismissBlock dismissBlock;
+
 
 @end
