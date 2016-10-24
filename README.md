@@ -42,7 +42,10 @@ You can use the default WiFi Page to tell users how and where to use it.
 <img src="https://raw.githubusercontent.com/Soulghost/SGWiFiUpload/master/Images/WiFiPhonePage.png" width = "300" height = "533" alt="WiFi Page" align=center />
 </p>
 ```objective-c
-[[SGWiFiUploadManager sharedManager] showWiFiPageFrontViewController:self];
+SGWiFiUploadManager *mgr = [SGWiFiUploadManager sharedManager];
+[mgr showWiFiPageFrontViewController:self dismiss:^{
+    [mgr stopHTTPServer];
+}];
 ```
 
 ### Custom Settings
