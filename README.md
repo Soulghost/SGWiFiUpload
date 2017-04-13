@@ -10,12 +10,14 @@ Drag the `SGWiFiUpload` folder to your project.
 
 ## Usage
 ### Import header
-```objective-c
+
+```objc
 #import "SGWiFiUploadManager.h"
 ```
 
 ### Start server and add observer to process
-```objective-c
+
+```objc
 - (void)setupServer {
     SGWiFiUploadManager *mgr = [SGWiFiUploadManager sharedManager];
     BOOL success = [mgr startHTTPServerAtPort:10086];
@@ -41,7 +43,8 @@ You can use the default WiFi Page to tell users how and where to use it.
 <p>
 <img src="https://raw.githubusercontent.com/Soulghost/SGWiFiUpload/master/Images/WiFiPhonePage.png" width = "300" height = "533" alt="WiFi Page" align=center />
 </p>
-```objective-c
+
+```objc
 SGWiFiUploadManager *mgr = [SGWiFiUploadManager sharedManager];
 [mgr showWiFiPageFrontViewController:self dismiss:^{
     [mgr stopHTTPServer];
