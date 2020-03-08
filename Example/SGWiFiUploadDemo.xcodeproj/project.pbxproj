@@ -16,9 +16,9 @@
 		686C73EB1D295F50004248EB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 686C73EA1D295F50004248EB /* Launch Screen.storyboard */; };
 		68B5E05B1D24C149005C2BD2 /* SGConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5E0081D24C149005C2BD2 /* SGConst.m */; };
 		68B5E05C1D24C149005C2BD2 /* SGWiFiUpload.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 68B5E0091D24C149005C2BD2 /* SGWiFiUpload.bundle */; };
-		68B5E05D1D24C149005C2BD2 /* About.txt in Resources */ = {isa = PBXBuildFile; fileRef = 68B5E00C1D24C149005C2BD2 /* About.txt */; };
+		68B5E05D1D24C149005C2BD2 /* CocoaAsyncSocket-About.txt in Resources */ = {isa = PBXBuildFile; fileRef = 68B5E00C1D24C149005C2BD2 /* CocoaAsyncSocket-About.txt */; };
 		68B5E05E1D24C149005C2BD2 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5E00E1D24C149005C2BD2 /* GCDAsyncSocket.m */; };
-		68B5E05F1D24C149005C2BD2 /* About.txt in Resources */ = {isa = PBXBuildFile; fileRef = 68B5E0101D24C149005C2BD2 /* About.txt */; };
+		68B5E05F1D24C149005C2BD2 /* CocoaLumberjack-About.txt in Resources */ = {isa = PBXBuildFile; fileRef = 68B5E0101D24C149005C2BD2 /* CocoaLumberjack-About.txt */; };
 		68B5E0601D24C149005C2BD2 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5E0121D24C149005C2BD2 /* DDAbstractDatabaseLogger.m */; };
 		68B5E0611D24C149005C2BD2 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5E0141D24C149005C2BD2 /* DDASLLogger.m */; };
 		68B5E0621D24C149005C2BD2 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5E0161D24C149005C2BD2 /* DDFileLogger.m */; };
@@ -90,10 +90,10 @@
 		68B5E0071D24C149005C2BD2 /* SGConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGConst.h; sourceTree = "<group>"; };
 		68B5E0081D24C149005C2BD2 /* SGConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGConst.m; sourceTree = "<group>"; };
 		68B5E0091D24C149005C2BD2 /* SGWiFiUpload.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SGWiFiUpload.bundle; sourceTree = "<group>"; };
-		68B5E00C1D24C149005C2BD2 /* About.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = About.txt; sourceTree = "<group>"; };
+		68B5E00C1D24C149005C2BD2 /* CocoaAsyncSocket-About.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "CocoaAsyncSocket-About.txt"; sourceTree = "<group>"; };
 		68B5E00D1D24C149005C2BD2 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		68B5E00E1D24C149005C2BD2 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
-		68B5E0101D24C149005C2BD2 /* About.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = About.txt; sourceTree = "<group>"; };
+		68B5E0101D24C149005C2BD2 /* CocoaLumberjack-About.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "CocoaLumberjack-About.txt"; sourceTree = "<group>"; };
 		68B5E0111D24C149005C2BD2 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
 		68B5E0121D24C149005C2BD2 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
 		68B5E0131D24C149005C2BD2 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
@@ -283,7 +283,7 @@
 		68B5E00B1D24C149005C2BD2 /* CocoaAsyncSocket */ = {
 			isa = PBXGroup;
 			children = (
-				68B5E00C1D24C149005C2BD2 /* About.txt */,
+				68B5E00C1D24C149005C2BD2 /* CocoaAsyncSocket-About.txt */,
 				68B5E00D1D24C149005C2BD2 /* GCDAsyncSocket.h */,
 				68B5E00E1D24C149005C2BD2 /* GCDAsyncSocket.m */,
 			);
@@ -293,7 +293,7 @@
 		68B5E00F1D24C149005C2BD2 /* CocoaLumberjack */ = {
 			isa = PBXGroup;
 			children = (
-				68B5E0101D24C149005C2BD2 /* About.txt */,
+				68B5E0101D24C149005C2BD2 /* CocoaLumberjack-About.txt */,
 				68B5E0111D24C149005C2BD2 /* DDAbstractDatabaseLogger.h */,
 				68B5E0121D24C149005C2BD2 /* DDAbstractDatabaseLogger.m */,
 				68B5E0131D24C149005C2BD2 /* DDASLLogger.h */,
@@ -537,6 +537,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -561,10 +562,10 @@
 				68B5E05C1D24C149005C2BD2 /* SGWiFiUpload.bundle in Resources */,
 				686C73EB1D295F50004248EB /* Launch Screen.storyboard in Resources */,
 				68B5E07B1D24C149005C2BD2 /* upload.html in Resources */,
-				68B5E05D1D24C149005C2BD2 /* About.txt in Resources */,
+				68B5E05D1D24C149005C2BD2 /* CocoaAsyncSocket-About.txt in Resources */,
 				681F52801D2404C800F23841 /* Assets.xcassets in Resources */,
 				68B5E0671D24C149005C2BD2 /* README.txt in Resources */,
-				68B5E05F1D24C149005C2BD2 /* About.txt in Resources */,
+				68B5E05F1D24C149005C2BD2 /* CocoaLumberjack-About.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
